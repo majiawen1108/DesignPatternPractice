@@ -2,6 +2,8 @@ package vo;
 
 import lombok.Data;
 
+import javax.validation.constraints.NotNull;
+
 /**
  * @author jw.ma
  * @title: Food
@@ -11,6 +13,7 @@ import lombok.Data;
 @Data
 public class Food {
     private String salt;
+    @NotNull(message = "soil is can't be null!")
     private String soil;
 
     @Override
